@@ -19,42 +19,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KG9D677');</script>
 <!-- End Google Tag Manager -->
-		<script> (function () {
-    window.VWOClearbitInterval = '';
-    var pollInterval = 100;
-    window.VWOClearbitTimerObj = "";
-    clearTimeout(window.VWOClearbitInterval);
-    window.VWOClearbitInterval = setTimeout(function waitForAnalyticsVariables() {
-        //eslint-disable-next-line
-        clearTimeout(window.VWOClearbitInterval);
-        clearInterval(window.VWOClearbitTimerObj);
-
-        var vwo_uuid = "";
-        try {
-            vwo_uuid = window.VWO._.cookies.get('_vwo_uuid') || '';
-        } catch(e) {
-            vwo_uuid = "";
-        }console.log("fire");
-         if(vwo_uuid && (typeof(window.gtag) !== 'undefined' || typeof(window.dataLayer) !== 'undefined')) {
-            window.vwo_ga4_uuid = vwo_uuid;//used in segmentor
-            if (typeof(window.gtag) !== 'undefined') {
-                
-                window.gtag('event', "VWO", {vwo_uuid: vwo_uuid});
-            }
-            if (typeof(window.dataLayer) !== 'undefined') {
-                window.dataLayer.push({
-                    'event': 'vwo-id-push-ga4',
-                    'vwo_uuid': vwo_uuid
-                });
-            }
-            return 1;
-        } else {
-            window.VWOClearbitTimerObj = setInterval(function () {
-                waitForAnalyticsVariables();
-            }, pollInterval);
-        }
-    }, pollInterval);
-  })(); </script> 
 	
 <meta charset="utf-8">
 <title>Bistro Restaurant Free HTML5 Bootstrap Template</title>
